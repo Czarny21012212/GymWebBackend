@@ -14,7 +14,7 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.emptyList(); // Możesz dodać role tutaj
+        return Collections.emptyList(); 
     }
 
     @Override
@@ -24,12 +24,12 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public String getUsername() {
-        return user.getEmail(); // Używamy e-maila jako loginu
+        return user.getEmail(); 
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return true; // Możesz dodać logikę do wygasania konta
+        return true;
     }
 
 }
